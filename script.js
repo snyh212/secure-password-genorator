@@ -1,11 +1,21 @@
-// Assignment Code
+// Assignment Code (naming variables)
 var generateBtn = document.querySelector("#generate");
+var uCase = "abcdefghijklmnopqrstuvwxyz";
+var lCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var number = "1234567890"
+var sCharacter = "$_&";
 
 // Write password to the #password input
 function generatePassword(){
-  prompt("something");
+  /* prompting user for password criteria */
+  var passwordLength = prompt("How many characters would you like your password to contain?");
+  if (passwordLength < 8) {
+    alert("Password must be at least 8 charachters");
+    passwordLength = prompt("How many characters would you like your password to contain?");
+  }else if (passwordLength > 128){
 
-  
+  }
+
   return "my answer";
 }
 
