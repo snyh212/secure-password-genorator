@@ -1,6 +1,6 @@
 # secure-password-genorator
 
-Deployable Link:
+[Deployable Link:https://snyh212.github.io/secure-password-genorator/](https://snyh212.github.io/secure-password-genorator/)
 
 ## Descriptiom
 
@@ -9,6 +9,28 @@ The purpose of "secure-password-genorator" is to allow a user to have a secure p
 ## Technologies used
 
 Project done using HTML, CSS, JavaScript, Github, GitLab on VS code.
+
+## Code
+
+```
+/* assigning variables */
+var generateBtn = document.querySelector("#generate");
+var lCase = "abcdefghijklmnopqrstuvwxyz";
+var uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var number = "1234567890"
+var sCharacter = "$_&";
+
+function generatePassword(){
+  
+/* prompting user for password criteria */
+
+  var options = "";
+  var passwordLength = prompt("How many characters would you like your password to contain?");
+  if (passwordLength < 8) { /* password minimum */
+    alert("Password must be at least 8 charachters!");
+```
+<img src="pictures\Screenshot 2022-06-25 000922.png">
+<img src="pictures\Screenshot 2022-06-25 000950.png">
 
 ## Contact
 
